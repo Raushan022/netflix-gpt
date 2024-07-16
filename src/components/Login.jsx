@@ -14,6 +14,15 @@ const Login = () => {
     //validate the form data
     const message = checkValidData(email.current.value, password.current.value);
     setErrorMessage(message)
+
+    if(message) return;
+
+    //sign in/sign up logic
+    if(!isSignInForm) {
+      //sign up logic
+      
+    }
+
   }
 
   const toggleSignInForm = () => {
